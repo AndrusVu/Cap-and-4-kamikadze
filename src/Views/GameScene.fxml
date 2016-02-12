@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="gameBackground" fx:id="gameField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handleKeyPressed" onMouseClicked="#handleGameFieldMouseClicked" onMouseMoved="#handleGameFieldMouseMoved" prefHeight="400.0" prefWidth="600.0" stylesheets="@../Resources/gameStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GameController">
+   <children>
+      <Label fx:id="pointsLabel" alignment="CENTER" layoutX="626.0" layoutY="11.0" prefHeight="34.0" prefWidth="160.0" text="Points" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="menuButton" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#handleMenuButtonClick" opacity="0.54" text="Menu" />
+      <Pane id="ship" fx:id="shipSprite" layoutX="364.0" layoutY="252.0" prefHeight="97.0" prefWidth="73.0" stylesheets="@../Resources/shipStyle.css" />
+      <Label fx:id="timeLabel" layoutX="342.0" layoutY="12.0" text="Time: " textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

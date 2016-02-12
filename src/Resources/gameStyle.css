@@ -1,0 +1,9 @@
+#gameBackground{
+   -fx-background-image: url("../Resources/map.jpg");
+   -fx-background-repeat: no-repeat;
+   -fx-background-color: rgb(0, 0, 0);
+   -fx-background-position: center center;
+   -fx-background-size: 800 600;
+   -fx-pref-width: 800;
+   -fx-pref-height: 600;
+}

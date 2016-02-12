@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="gameBackground" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../Resources/gameStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GameFinishedController">
+   <children>
+      <Button alignment="CENTER" layoutX="334.0" layoutY="411.0" mnemonicParsing="false" onMouseClicked="#handleContinueButtonClick" prefHeight="41.0" prefWidth="133.0" text="Continue" textAlignment="CENTER">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="112.92" radius="57.442499999999995" spread="0.37" width="118.85" />
+         </effect></Button>
+      <Label fx:id="gameResultLabel" alignment="CENTER" layoutX="163.0" layoutY="117.0" prefHeight="129.0" prefWidth="474.0" text="WIN" textFill="LIME">
+         <font>
+            <Font size="96.0" />
+         </font>
+         <effect>
+            <Reflection fraction="0.64" topOffset="-10.0" topOpacity="0.79">
+               <input>
+                  <Glow level="1.0" />
+               </input>
+            </Reflection>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

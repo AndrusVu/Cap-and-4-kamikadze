@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="menuBackground" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../Resources/menuStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StartSceneController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="146.0" layoutY="24.0" prefHeight="105.0" prefWidth="308.0" text="Airplane" textFill="WHITE" underline="true">
+         <font>
+            <Font size="72.0" />
+         </font>
+         <effect>
+            <Reflection bottomOpacity="0.12" fraction="0.6" topOpacity="0.69">
+               <input>
+                  <Glow level="1.0" />
+               </input>
+            </Reflection>
+         </effect>
+      </Label>
+      <VBox alignment="CENTER" layoutX="250.0" layoutY="91.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="startButton" mnemonicParsing="false" onMouseClicked="#handleStartClick" prefHeight="25.0" prefWidth="89.0" text="Start" />
+            <Button fx:id="exitButton" mnemonicParsing="false" onMouseClicked="#handleExitClick" prefHeight="25.0" prefWidth="66.0" text="Exit">
+               <effect>
+                  <Reflection />
+               </effect></Button>
+         </children>
+      </VBox>
+      <Slider fx:id="difficultySlider" layoutX="447.0" layoutY="191.0" majorTickUnit="100.0" max="850.0" min="100.0" orientation="VERTICAL" value="400.0" />
+      <Label alignment="CENTER" layoutX="441.0" layoutY="164.0" text="Difficulty" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="463.0" layoutY="192.0" text="MAX" textFill="WHITE" />
+      <Label layoutX="465.0" layoutY="314.0" text="MIN" textFill="WHITE" />
+      <CheckBox fx:id="AICheckbox" layoutX="97.0" layoutY="314.0" mnemonicParsing="false" text="AI Game" textFill="WHITE" />
+      <Button fx:id="playLastGameButton" alignment="CENTER" layoutX="204.0" layoutY="310.0" mnemonicParsing="false" onMouseClicked="#playLastGame" text="Play last game">
+         <effect>
+            <Reflection />
+         </effect></Button>
+      <MenuButton blendMode="COLOR_DODGE" mnemonicParsing="false" text="Additional" underline="true">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#handleCalcPerformanceButtonClick" text="Calculate perfomance" />
+          <MenuItem mnemonicParsing="false" onAction="#handleCalcStatisticButtonClick" text="Calculate statistics" />
+            <MenuItem mnemonicParsing="false" onAction="#handleLastReplayMagicMouseClick" text="Magic" />
+        </items>
+         <effect>
+            <Reflection />
+         </effect>
+      </MenuButton>
+      <Button layoutX="308.0" layoutY="310.0" mnemonicParsing="false" onMouseClicked="#handlePlayBestMouseClick" text="Play the best">
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
