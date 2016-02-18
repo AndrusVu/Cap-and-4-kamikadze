@@ -45,9 +45,9 @@
          </effect></Button>
       <MenuButton blendMode="COLOR_DODGE" mnemonicParsing="false" text="Additional" underline="true">
         <items>
-          <MenuItem mnemonicParsing="false" onAction="#handleCalcPerformanceButtonClick" text="Calculate perfomance" />
-          <MenuItem mnemonicParsing="false" onAction="#handleCalcStatisticButtonClick" text="Calculate statistics" />
-            <MenuItem mnemonicParsing="false" onAction="#handleLastReplayMagicMouseClick" text="Magic" />
+          <MenuItem mnemonicParsing="false" text="Calculate perfomance" />
+          <MenuItem mnemonicParsing="false" text="Calculate statistics" />
+            <MenuItem mnemonicParsing="false" text="Magic" />
         </items>
          <effect>
             <Reflection />

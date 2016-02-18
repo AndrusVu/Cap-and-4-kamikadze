@@ -36,7 +36,7 @@ public class StartSceneController extends ControllerBase {
         controller.playRecord(ReplayFilesLoader.getLastReplayFileContent());
     }
 
-    @FXML protected void handleCalcPerformanceButtonClick(){
+    /*@FXML protected void handleCalcPerformanceButtonClick(){
         File[] replayFiles = ReplayFilesLoader.getReplayFiles();
         Map<String, Integer> unsortedPoints = ReplaysPointsCollector.getActionsPoints(replayFiles);
 
@@ -50,7 +50,7 @@ public class StartSceneController extends ControllerBase {
         writeResults(scalaSorted, "Scala sorted ", "ScalaSort.res");
 
         showSortPerformanceInfo(javaSort, scalaSort);
-    }
+    }*/
 
     private void showSortPerformanceInfo(ISortPerformanceCounter javaSort, ISortPerformanceCounter scalaSort) {
         showMagicInfo("Performance calculations result", "Java and Scala performance calculations result",
@@ -70,13 +70,13 @@ public class StartSceneController extends ControllerBase {
         }
     }
 
-    @FXML protected void handleCalcStatisticButtonClick(){
+    /*@FXML protected void handleCalcStatisticButtonClick(){
         File[] replayFiles = ReplayFilesLoader.getReplayFiles();
         ScalaStatisticCollector collector = new ScalaStatisticCollector(replayFiles);
         List<Map<String, Integer>> statistic = collector.collect();
         writeStatisticResult(replayFiles, statistic);
         showStatisticInfo(statistic.get(statistic.size() - 1));
-    }
+    }*/
 
     private void writeStatisticResult(File[] replayFiles, List<Map<String, Integer>> statistic) {
         try {
@@ -117,7 +117,7 @@ public class StartSceneController extends ControllerBase {
         return infoBoxMsg;
     }
 
-    @FXML protected void handleLastReplayMagicMouseClick(){
+    /*@FXML protected void handleLastReplayMagicMouseClick(){
         String lastReplayContent = ReplayFilesLoader.getLastReplayFileContent();
         String lastReplayReadableForm = ScalaLastReplayMagicPerformer.makeReplayReadable(lastReplayContent);
 
@@ -131,7 +131,7 @@ public class StartSceneController extends ControllerBase {
         showMagicInfo("Magic result",
                 "Replay magic transformations result",
                 "Completed");
-    }
+    }*/
 
     private void showMagicInfo(String title, String headerText, String completed) {
         Alert infoBox = new Alert(Alert.AlertType.INFORMATION);
