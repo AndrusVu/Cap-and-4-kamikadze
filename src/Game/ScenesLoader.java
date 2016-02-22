@@ -21,6 +21,17 @@ public class ScenesLoader {
         this.primaryStage = primaryStage;
     }
 
+    //change the screen resolution
+    public void changeResolutionScreen() {
+        if(this.primaryStage.isFullScreen()) {
+            this.primaryStage.setFullScreen(false);
+        }
+        else {
+            this.primaryStage.setFullScreen(true);
+        }
+        return;
+    }
+
     /**
      * Set scene for work.
      * @param scenePath scene path.
